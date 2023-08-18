@@ -3,9 +3,32 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+list-style: none;
 }
 
 body {
-background-color: #C2E1DC;
+background-color: #f0eded7a;
 color:black;
 } 
+
+.text-style{
+    color:#83C2A8 ;
+}
+.text2{
+    color:#ED6630;
+    font-weight: bold;
+    font-size: 70px
+    ;
+}
+.username-style label{
+    font-size: 20px;
+    color: #3C3E39;
+    font-weight: bold;
+}
+
+.btn{
+    background-color:#E9D7BB;
+    font-size: 18px;
+    font-weight: bold;
+    color:  #3C3E39;
+}
