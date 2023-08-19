@@ -7,29 +7,63 @@ list-style: none;
 }
 
 body {
-background-color: #f0eded7a;
+background-color: #b2e1ee7a;
 color:black;
 } 
 
 .text-style{
     color:#83C2A8 ;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Alfa Slab One', cursive;
+    /* font-family: 'Anton', sans-serif;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Play', sans-serif; */
+    font-size: 70px;
 }
+
 .text2{
     color:#ED6630;
-    font-weight: bold;
-    font-size: 70px
-    ;
+    /* font-weight: bold; */
+    font-size: 70px;
+    font-family: 'Anton', sans-serif;
 }
 .username-style label{
     font-size: 20px;
-    color: #3C3E39;
+    color: #83C2A8;
     font-weight: bold;
 }
 
 .btn{
-    background-color:#E9D7BB;
+    background-color: #5b9cae7a;
     font-size: 18px;
     font-weight: bold;
-    color:  #3C3E39;
+    color:  #fff;
 }
 
+
+.wrapper{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: hsla(0, 0%, 0%, 0.292);
+z-index: 10000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.close-wrapper{
+width: 50px;
+height: 50px;
+position: absolute;
+top: 50px;
+right: 50px;
+color: white;
+cursor: pointer;
+}
+.wrapper .container{
+z-index: 1000000;
+}
