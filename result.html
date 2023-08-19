@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- pointtext -->
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center text-center"
+      style="margin: auto; gap: 3rem"
+    >
+      <div class="p-3">
+        <h1 class="welcomeText text-warning">Results of Answer</h1>
+        <img
+          src="./image/result.png "
+          class="d-flex flex-column"
+          style="width: 100%"
+        />
+      </div>
+      <!-- end -->
+
+      <!-- card of point -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 w-100">
+        <div class="col">
+          <div class="card" style="background-color: #b0e6c5">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 25px; color: #5a6451">
+                Easy Level
+              </h5>
+              <p class="card-text" style="font-size: 16px; color: #5a6451">
+                Pointes:
+                <span
+                  id="easy-point"
+                  style="font-size: 16px; color: #5a6451"
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: #dd8f8f">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 25px; color: #5a6451">
+                Medium Level
+              </h5>
+              <p class="card-text" style="font-size: 16px; color: #5a6451">
+                Pointes:
+                <span
+                  id="medium-point"
+                  style="font-size: 16px; color: #5a6451"
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: #fcda9d">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 25px; color: #5a6451">
+                Hard Level
+              </h5>
+              <p class="card-text" style="font-size: 16px; color: #5a6451">
+                Pointes:
+                <span
+                  id="hard-point"
+                  style="font-size: 16px; color: #5a6451"
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- section 3 -->
+      <div
+        class="shadow p-3 mb-5 bg-body-tertiary rounded fs-20"
+        style="font-size: 20px; font-weight: bold; color: #6bcce6"
+      >
+        Earn more point by solving math problems
+        <h3 class="p-5" style="color: #cb8585">Choose level to go</h3>
+        <a
+          class="btn fw-bold btn-warning mb-5"
+          href="./que.html"
+          onclick="easyOnClick()"
+          >Easy Mode</a
+        >
+        <a
+          class="btn fw-bold btn-warning mb-5"
+          href="./que.html"
+          onclick="mediumOnClick()"
+          >Medium Mode</a
+        >
+        <a
+          class="btn fw-bold btn-warning mb-5"
+          href="./que.html"
+          onclick="hardOnClick()"
+          >Hard Mode</a
+        >
+      </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="result.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

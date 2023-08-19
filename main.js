@@ -6,25 +6,25 @@ let gameOptions = {
   gameMode: "",
 };
 
-const sortedGameOptions = localStorage.getItem("Game-Options");
+const sorted = localStorage.getItem("Game-Options");
 
-let gameOptionsObject = JSON.parse(sortedGameOptions);
+let gameObject = JSON.parse(sorted);
 
 // funcation of choese level
 
 const easyOnClick = () => {
-  gameOptionsObject.gameMode = "easy";
-  localStorage.setItem("Game-Options", JSON.stringify(gameOptionsObject));
+  gameObject.gameMode = "easy";
+  localStorage.setItem("Game-Options", JSON.stringify(gameObject));
 };
 
 const mediumOnClick = () => {
-  gameOptionsObject.gameMode = "medium";
-  localStorage.setItem("Game-Options", JSON.stringify(gameOptionsObject));
+  gameObject.gameMode = "medium";
+  localStorage.setItem("Game-Options", JSON.stringify(gameObject));
 };
 
 const hardOnClick = () => {
-  gameOptionsObject.gameMode = "hard";
-  localStorage.setItem("Game-Options", JSON.stringify(gameOptionsObject));
+  gameObject.gameMode = "hard";
+  localStorage.setItem("Game-Options", JSON.stringify(gameObject));
 };
 
 // funaction show cards
@@ -37,32 +37,32 @@ const showingCards = () => {
         <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-            <div class="card h-100">
-                <img src="image/29166.jpg" class="card-img-top d-none d-md-block img-sCard" alt="...">
+            <div class="card text-center h-100">
+                <img src="image/29166.jpg" class="card-img-top d-none d-md-block img-sCard" >
                 <div class="card-body body-style">
-                <h5 class="card-title">Easy Level</h5>
-                <p class="card-text">Easy level math questions</p>
-                <a href="/que.html" onClick="easyOnClick()" class="btn fw-bold btn-warning">Go to Questions</a>
+                <h5 class="card-title" style= "color: #5E9736">Easy Level</h5>
+                <p class=" card-text" style= "color: #5E9736">Easy level math questions</p>
+                <a href="/que.html" onClick="easyOnClick()" class=" text-center btn fw-bold btn-warning">Go to Questions</a>
                 </div>
             </div>
             </div>
             <div class="col">
-            <div class="card h-100">
+            <div class="card text-center h-100">
                 <img src="image/28992.jpg" class="card-img-top d-none d-md-block img-card" alt="...">
                 <div class="card-body body-style">
-                <h5 class="card-title">Medium Level</h5>
-                <p class="card-text">Medium level math questions</p>
+                <h5 class="card-title" style="color:#902D6A">Medium Level</h5>
+                <p class="card-text" style="color:#902D6A">Medium level math questions</p>
                 <a href="/que.html" onClick="mediumOnClick()" class="btn fw-bold btn-warning">Go to Questions</a>
 
                 </div>
             </div>
             </div>
             <div class="col">
-            <div class="card h-100">
+            <div class="card text-center h-100">
                 <img src="image/Premium Vector _ Happy cute little kid boy study math.jpg" class="card-img-top d-none d-md-block" alt="...">
                 <div class="card-body body-style">
-                <h5 class="card-title"> Hard Level </h5>
-                <p class="card-text">Hard level math questions </p>
+                <h5 class="card-title" style="color: #2D8F93"> Hard Level </h5>
+                <p class="card-text" style="color: #2D8F93">Hard level math questions </p>
                 <a href="/que.html" onClick="hardOnClick()" class="btn fw-bold btn-warning">Go to Questions</a>
                 </div>
             </div>
@@ -92,9 +92,9 @@ submit.addEventListener("click", (e) => {
 
   localStorage.setItem("Game-Options", JSON.stringify(gameOptions));
 
-  gameOptionsObject.username = username;
+  gameObject.username = username;
 
-  localStorage.setItem("Game-Options", JSON.stringify(gameOptionsObject));
+  localStorage.setItem("Game-Options", JSON.stringify(gameObject));
 
   showingCards();
 });

@@ -67,7 +67,6 @@ body {
 .welcomeText {
   font-size: 60px;
   font-weight: bold;
-  color: rgb(90, 91, 12);
 }
 .username-style {
   color: #e18018d2;
@@ -78,6 +77,6 @@ body {
     text-align: center;
   }
   .fs-res {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }

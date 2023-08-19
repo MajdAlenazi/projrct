@@ -19,24 +19,46 @@
       style="margin: auto; gap: 1rem"
     >
       <div class="p-3">
-        <span class="welcomeText"
+        <span class="welcomeText text-warning"
           >Welcome
-          <p id="fname"></p
+          <p id="fname" style="color: rgb(197, 118, 49)"></p
         ></span>
+      </div>
+      <!-- end -->
+
+      <!-- timer -->
+      <nav
+        class="navbar bg-body-tertiary shadow-lg p-3 mb-5 bg-white rounded"
+        style="width: fit-content"
+      >
+        <div class="container-fluid text-center">
+          <span class="navbar-brand mb-0 h1 text-center"
+            >Timer : <span id="timer"></span
+          ></span>
+        </div>
+      </nav>
+      <!-- end -->
+
+      <div
+        class="row row-cols-1 row-cols-md-2 g-3"
+        id="questions-container"
+      ></div>
+      <div id="another-element" class=""></div>
+      <div
+        class="d-flex flex-column align-items-center mt-3"
+        id="button-section"
+      >
+        <a
+          href="result.html"
+          id="check-button"
+          type="button"
+          class="btn fw-bold btn-warning mb-5"
+        >
+          Check
+        </a>
       </div>
     </div>
-    <!-- end -->
-    <!-- timer -->
-    <nav
-      class="navbar bg-body-tertiary shadow-lg p-3 mb-5 bg-white rounded"
-      style="width: fit-content"
-    >
-      <div class="container-fluid text-center">
-        <span class="navbar-brand mb-0 h1 text-center"
-          >Timer : <span id="timer"></span
-        ></span>
-      </div>
-    </nav>
-    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="que.js"></script>
   </body>
 </html>
