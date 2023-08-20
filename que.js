@@ -604,7 +604,7 @@ SQuestions.forEach((question, index) => {
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-7">
-                <div class="card-body" style="margin: 10px">
+                <div class="card-body" style="margin: 10px; font-size: 20px;">
                   <label for="q${
                     index + 1
                   }a" class="card-title fw-bold text-warning mb-2">
