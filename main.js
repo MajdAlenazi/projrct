@@ -38,7 +38,7 @@ const showingCards = () => {
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
             <div class="card text-center h-100">
-                <img src="image/29166.jpg" class="card-img-top d-none d-md-block img-sCard" >
+                <img src="./image/29166.jpg" class="card-img-top d-none d-md-block img-sCard" >
                 <div class="card-body body-style">
                 <h5 class="card-title" style= "color: #5E9736">Easy Level</h5>
                 <p class=" card-text" style= "color: #5E9736">Easy level math questions</p>
@@ -48,7 +48,7 @@ const showingCards = () => {
             </div>
             <div class="col">
             <div class="card text-center h-100">
-                <img src="image/28992.jpg" class="card-img-top d-none d-md-block img-card" alt="...">
+                <img src="./image/28992.jpg" class="card-img-top d-none d-md-block img-card" alt="...">
                 <div class="card-body body-style">
                 <h5 class="card-title" style="color:#902D6A">Medium Level</h5>
                 <p class="card-text" style="color:#902D6A">Medium level math questions</p>
@@ -59,7 +59,7 @@ const showingCards = () => {
             </div>
             <div class="col">
             <div class="card text-center h-100">
-                <img src="image/Premium Vector _ Happy cute little kid boy study math.jpg" class="card-img-top d-none d-md-block" alt="...">
+                <img src="./image/Premium Vector _ Happy cute little kid boy study math.jpg" class="card-img-top d-none d-md-block" alt="...">
                 <div class="card-body body-style">
                 <h5 class="card-title" style="color: #2D8F93"> Hard Level </h5>
                 <p class="card-text" style="color: #2D8F93">Hard level math questions </p>
