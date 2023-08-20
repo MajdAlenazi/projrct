@@ -663,7 +663,6 @@ const checkOnAnswer = () => {
   localStorage.setItem("points", JSON.stringify(points));
 };
 
-// Attach event listener to the "Check" button
 const checkButton = document.getElementById("check-button");
 checkButton.addEventListener("click", checkOnAnswer);
 
@@ -692,7 +691,7 @@ let set = setInterval(function () {
             type="button"
             class="btn fw-bold btn-warning mb-5"
           >
-            Change mode
+            Change Level
           </a>
         </div>
         `;
